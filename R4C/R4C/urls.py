@@ -22,3 +22,4 @@ urlpatterns = [
 
     path('api/robots/', create_robot, name='create-robot'),
 ]
+
