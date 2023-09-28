@@ -17,9 +17,13 @@ from django.contrib import admin
 from django.urls import path
 
 from robots.views import create_robot
+
+from customers.views import create_robot_data_excel
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('api/robots/', create_robot, name='create-robot'),
+    path('api/directors/', create_robot_data_excel, name='create_robot_data_excel'),
 ]
 
