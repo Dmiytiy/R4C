@@ -20,10 +20,13 @@ from robots.views import create_robot
 
 from customers.views import create_robot_data_excel
 
+from orders.views import send_mail
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('api/robots/', create_robot, name='create-robot'),
     path('api/directors/', create_robot_data_excel, name='create_robot_data_excel'),
+    path('api/orders/', send_mail, name='send_robot'),
 ]
 
